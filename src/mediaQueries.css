@@ -1,0 +1,48 @@
+@media only screen and (max-width: 700px) {
+    #Profile {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .profile-name {
+        font-size: 2rem;
+    }
+    .font2rem {
+        font-size: 1.5rem;
+    }
+    #Contact ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #card-container {
+        flex-direction: column;
+    }
+    .card {
+        width: 80%;
+        padding-bottom: 0;
+    }
+    img {
+        width: 100%;
+    }
+    table {
+        width: 80%;
+    }
+    #Profile {
+        padding-top: 0;
+    } 
+    .navbar-container {
+        display: none;
+    }
+    #Contact {
+        padding-bottom: 10vh;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+    a, ul, li {
+        height: 100%;
+    }
+}
+
+

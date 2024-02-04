@@ -1,38 +1,282 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Neue Machina Lighter';
+  src: url('./fonts/NeueMachina/NeueMachina-Light.otf') format('opentype');
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('./fonts/NeueMachina/NeueMachina-Regular.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Neue Machina Ultrabold';
+  src: url('./fonts/NeueMachina/NeueMachina-Ultrabold.otf') format('opentype');
+  font-weight: bolder;
+}
+
+
+body {
+  font-family: 'Neue Machina', sans-serif;
+  font-weight: lighter;
+  width: 100vw;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0.4rem black;
+  background-color: #FFE9AD;
+  font-family: 'Neue Machina', sans-serif;
+  font-weight: lighter;
+}
+
+button:active {
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+}
+
+i {
+  cursor: pointer;
+  font-size: 30px;
+  margin: 5px;
+}
+
+h1 {
+  font-family: 'Neue Machina Ultrabold';
+  font-size: 2rem;
+  padding-top: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  margin-top: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  width: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+table {
+  width: 50%;
+  border-collapse: separate;
+  border-radius: 5px;
+  border-spacing: 0 10px; 
+}
+
+tr {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0.4rem black;
+  background-color: #FFC629;
+  margin-top: 2px;
+  text-align: left;
+}
+
+th {
+  padding: 0 5px;
+}
+
+td {
+  padding: 0 5px;
+}
+
+.light-yellow {
+  background-color: #FFE9AD;
+}
+
+.dark-yellow {
+  background-color: #FFC629;
+}
+
+.font3rem {
+  font-size: 3rem !important;
+}
+
+.font2rem {
+  font-size: 2rem;
+}
+
+.font1rem {
+  font-size: 1rem;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-grow {
+  flex-grow: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.padding-left-right {
+  width: 50%;
+}
+
+.flex {
+  display: flex;
+}
+
+.width-auto {
+  width: auto;
+}
+
+.gap-20 {
+  gap: 20px
+}
+
+.gap-20 {
+  gap: 20px
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.padding-top-10 {
+  padding-top: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFE9AD;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.profileImg {
+  border-radius: 50%;
+  border: none;
+  width: 50%;;
+}
+
+.logo {
+  font-family: 'Neue Machina Ultrabold';
+  font-size: 4rem;
+  font-weight: bolder;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 10px;
+}
+
+.nav-links {
+  padding: 0 10px 0 0;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+
+.nav-links a, .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* section */
+.section {
+  min-height: 90vh;
+}
+
+.section:nth-child(even) {
+  background-color: #FFC629;
+}
+
+.section:nth-child(odd) {
+  background-color: #FFE9AD;
+}
+
+.profile-name {
+  font-family: 'Neue Machina Ultrabold';
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+#description li {
+  margin-top: 5px;
+}
+
+#description button {
+  margin: 0 5px;
+}
+
+#Experience ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+#Experience li {
+  font-size: 20px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0.4rem black;
+  margin: 10px;
+  background-color: #FFC629;
+}
+
+.card {
+  background-color: #ffe9ad;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#Profile {
+  padding-top: 10vh;
+}
+
+.ham-navbar-container {
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFE9AD;
+  height: 10vh;
+  width: 100%;
 }

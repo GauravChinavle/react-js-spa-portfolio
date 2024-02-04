@@ -1,0 +1,44 @@
+{
+  "name": "Gaurav Chinawale",
+  "logoHeader": "GC.",
+  "workingStartDate": "4 March 2020",
+  "designation": "Senior Product Engineer",
+  "qualification": "Computer Engineer",
+  "emailID": "chinawalegaurav@gmail.com",
+  "linkedinLink": "https://in.linkedin.com/in/gauravchinawale",
+  "githubLink": "https://github.com/GauravChinavle",
+  "experience": [
+    "NodeJS",
+    "ExpressJS",
+    "Typescript",
+    "GraphQL",
+    "ReactJS",
+    "NextJS",
+    "MaterialUI",
+    "MochaJS",
+    "ChaiJS",
+    "SinonJS",
+    "PM2",
+    "Jenkins",
+    "Docker",
+    "MySQL",
+    "Redis",
+    "Datadog",
+    "Kibana",
+    "RabbitMQ"
+  ],
+  "liveDemos": [
+    {
+      "title": "Vaccine Slots Tracker",
+      "imagePath": "/assets/vaccine-slots.png",
+      "githubLink": "https://github.com/GauravChinavle/react-vaccine-slots",
+      "url": "https://vaccine-slots-tracker.netlify.app/s"
+    },
+    {
+      "title": "Splitwise",
+      "imagePath": "/assets/splitwise.png",
+      "githubLink": "https://github.com/GauravChinavle/splitwise",
+      "url": "https://splitsync.netlify.app/"
+    }
+  ]
+}

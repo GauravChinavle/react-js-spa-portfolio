@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import HamNavbar from "./components/HamNavbar";
+import "./App.css"
+import "./mediaQueries.css"
+import "./scrollingScript"
+// We will create these two pages in a moment
+import Profile from "./pages/Profile";
+import Experience from "./pages/Experience";
+import LiveDemo from "./pages/LiveDemo";
+import GithubProjects from "./pages/GithubProjects";
+import Contact from "./pages/Contact";
+// portfolio config file
+import Portfolio from "./portfolio.json";
+import { useMediaQuery } from 'react-responsive';
 
-function App() {
+export default function App() {
+  const isSmallScreen = useMediaQuery({ maxWidth: 700 });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {isSmallScreen ? <HamNavbar default={Portfolio} />:<Navbar default={Portfolio} />}
+      <Profile default={Portfolio} />
+      <Experience default={Portfolio} />
+      <LiveDemo default={Portfolio} />
+      <GithubProjects default={Portfolio} />
+      <Contact default={Portfolio} />
+    </>
+  )
 }
-
-export default App;
