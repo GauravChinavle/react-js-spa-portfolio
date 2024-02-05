@@ -16,8 +16,11 @@ export function getYears(startDate) {
 
 export function scrollTo(location) {
     const targetElement = document.getElementById(location);
-    var navbarHeight = document.querySelector('.navbar-container').offsetHeight;
-
+    let navbar = ".navbar-container";
+    if (window.matchMedia('(max-width: 700px)').matches) {
+      navbar = ".ham-container";
+    }
+    var navbarHeight = document.querySelector(navbar).offsetHeight;
     if (targetElement) {
         const offsetTop = targetElement.offsetTop - navbarHeight;
 
