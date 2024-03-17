@@ -8,9 +8,11 @@
   "linkedinLink": "https://in.linkedin.com/in/gauravchinawale",
   "githubLink": "https://github.com/GauravChinavle",
   "experience": [
+    "Javascript",
+    "Typescript",
     "NodeJS",
     "ExpressJS",
-    "Typescript",
+    "NestJS",
     "GraphQL",
     "ReactJS",
     "NextJS",

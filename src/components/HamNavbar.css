@@ -6,7 +6,7 @@
 }
 
 .ham-nav-menu {
-    background-color: #FFE9AD;
+    background-color: #fefae0;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -34,7 +34,7 @@
     width: 100%;
     right: 0;
     height: 10vh;
-    background-color: #ffe9ad;
+    background-color: #fefae0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,5 +69,5 @@
 
 .ham-nav-links a {
     text-decoration: none;
-    color: black;
+    color: #3a5a40;
 }

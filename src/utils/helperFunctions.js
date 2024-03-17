@@ -10,8 +10,20 @@ export function isValidUrl(url) {
 };
 
 export function getYears(startDate) {
-  const years = moment().diff(moment(startDate, "DD MMM YYYY"), "years", true).toFixed(1);
-  return years;
+  let result = "";
+  const start = moment(startDate);
+  const end = moment();
+  
+  const years = end.diff(start, 'years');
+  start.add(years, 'years');
+  const months = end.diff(start, 'months');
+  result = `${years} years`;
+
+  if (months !== 0) {
+    result += ` and ${months} months`;
+  }
+
+  return result;
 };
 
 export function scrollTo(location) {
