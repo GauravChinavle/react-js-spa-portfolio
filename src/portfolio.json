@@ -41,6 +41,11 @@
       "imagePath": "/assets/splitwise.png",
       "githubLink": "https://github.com/GauravChinavle/splitwise",
       "url": "https://splitsync.netlify.app/"
+    },{
+      "title": "JSON formatter utility",
+      "imagePath": "/assets/jsonify.png",
+      "githubLink": "https://github.com/GauravChinavle/jsonify",
+      "url": "https://jsonify.in/"
     }
   ]
 }

@@ -13,7 +13,7 @@ export default function Experience({ default: { liveDemos } }) {
                         const key = title + index;
                         return (
                             <div className="center flex-column card width-auto" key={key}>
-                            <img src={imagePath} alt={title} />
+                            <img src={imagePath} alt={title} style={{height: "200px"}}/>
                             <h3>{title}</h3>
                             <p>
                                 <i className="fa-brands fa-square-github" onClick={() => window.open(githubLink, '_blank')} ></i>

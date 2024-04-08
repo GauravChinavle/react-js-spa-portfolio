@@ -20,7 +20,7 @@ export function getYears(startDate) {
   result = `${years} years`;
 
   if (months !== 0) {
-    result += ` and ${months} months`;
+    result += ` and ${months} month(s)`;
   }
 
   return result;
