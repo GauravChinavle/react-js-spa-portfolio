@@ -48,7 +48,7 @@ if(document) {
                 if (navbar && rect.top <= 10 && rect.bottom >= 10) {
                     const sectionBackgroundColor = window.getComputedStyle(section).getPropertyValue('background-color');
                     // Change navbar background based on section background color
-                    if (sectionBackgroundColor === 'rgb(255, 198, 41)') { // Check if section background is yellow
+                    if (sectionBackgroundColor === 'rgb(254, 250, 224)') { // Check if section background is yellow
                         navbar.style.backgroundColor = smallScreen ? '#fefae0': '#a3b18a'; // Light yellow
                     } else {
                         navbar.style.backgroundColor = smallScreen ? '#a3b18a' : '#fefae0'; // Default color for other backgrounds
